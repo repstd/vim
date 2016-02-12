@@ -1,0 +1,244 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+os	.\.ycm_extra_conf.py	/^import os$/;"	i
+ycm_core	.\.ycm_extra_conf.py	/^import ycm_core$/;"	i
+flags	.\.ycm_extra_conf.py	/^flags = [$/;"	v
+compilation_database_folder	.\.ycm_extra_conf.py	/^compilation_database_folder = ''$/;"	v
+database	.\.ycm_extra_conf.py	/^  database = ycm_core.CompilationDatabase( compilation_database_folder )$/;"	v
+database	.\.ycm_extra_conf.py	/^  database = None$/;"	v
+SOURCE_EXTENSIONS	.\.ycm_extra_conf.py	/^SOURCE_EXTENSIONS = [ '.cpp', '.cxx', '.cc', '.c', '.m', '.mm' ]$/;"	v
+DirectoryOfThisScript	.\.ycm_extra_conf.py	/^def DirectoryOfThisScript():$/;"	f
+MakeRelativePathsInFlagsAbsolute	.\.ycm_extra_conf.py	/^def MakeRelativePathsInFlagsAbsolute( flags, working_directory ):$/;"	f
+IsHeaderFile	.\.ycm_extra_conf.py	/^def IsHeaderFile( filename ):$/;"	f
+GetCompilationInfoForFile	.\.ycm_extra_conf.py	/^def GetCompilationInfoForFile( filename ):$/;"	f
+FlagsForFile	.\.ycm_extra_conf.py	/^def FlagsForFile( filename, **kwargs ):$/;"	f
+s:did_snips_mappings	.\after\plugin\snipMate.vim	/^let s:did_snips_mappings = 1$/;"	v
+<tab>	.\after\plugin\snipMate.vim	/^ino <silent> <tab> <c-r>=TriggerSnippet()<cr>$/;"	m
+<s-tab>	.\after\plugin\snipMate.vim	/^ino <silent> <s-tab> <c-r>=BackwardsSnippet()<cr>$/;"	m
+<c-r><tab>	.\after\plugin\snipMate.vim	/^ino <silent> <c-r><tab> <c-r>=ShowAvailableSnips()<cr>$/;"	m
+s:keepcpo	.\autoload\ada.vim	/^let s:keepcpo= &cpo$/;"	v
+g:ada#DotWordRegex	.\autoload\ada.vim	/^let g:ada#DotWordRegex	   = '\\a\\w*\\(\\_s*\\.\\_s*\\a\\w*\\)*'$/;"	v
+g:ada#WordRegex	.\autoload\ada.vim	/^let g:ada#WordRegex	   = '\\a\\w*'$/;"	v
+g:ada#Comment	.\autoload\ada.vim	/^let g:ada#Comment	   = "\\\\v^(\\"[^\\"]*\\"|'.'|[^\\"']){-}\\\\zs\\\\s*--.*"$/;"	v
+g:ada#Keywords	.\autoload\ada.vim	/^let g:ada#Keywords	   = []$/;"	v
+g:ada#Keywords	.\autoload\ada.vim	/^    let g:ada#Keywords += [{$/;"	v
+g:ada#Keywords	.\autoload\ada.vim	/^       let g:ada#Keywords += [{$/;"	v
+g:ada#Keywords	.\autoload\ada.vim	/^    let g:ada#Keywords += [{$/;"	v
+g:ada#Keywords	.\autoload\ada.vim	/^	let g:ada#Keywords += [{$/;"	v
+g:ada#Keywords	.\autoload\ada.vim	/^    let g:ada#Keywords += [{$/;"	v
+g:ada#Keywords	.\autoload\ada.vim	/^	let g:ada#Keywords += [{$/;"	v
+g:ada#Keywords	.\autoload\ada.vim	/^    let g:ada#Keywords += [{$/;"	v
+g:ada#Keywords	.\autoload\ada.vim	/^    let g:ada#Keywords += [{$/;"	v
+g:ada#Keywords	.\autoload\ada.vim	/^    let g:ada#Keywords += [{$/;"	v
+g:ada#Keywords	.\autoload\ada.vim	/^	let g:ada#Keywords += [{$/;"	v
+g:ada#Ctags_Kinds	.\autoload\ada.vim	/^let g:ada#Ctags_Kinds = {$/;"	v
+ada#Word	.\autoload\ada.vim	/^function ada#Word (...)$/;"	f
+ada#List_Tag	.\autoload\ada.vim	/^function ada#List_Tag (...)$/;"	f
+ada#Jump_Tag	.\autoload\ada.vim	/^function ada#Jump_Tag (Word, Mode)$/;"	f
+ada#Insert_Backspace	.\autoload\ada.vim	/^function ada#Insert_Backspace ()$/;"	f
+ada#User_Complete	.\autoload\ada.vim	/^function! ada#User_Complete(findstart, base)$/;"	f
+ada#Completion	.\autoload\ada.vim	/^function ada#Completion (cmd)$/;"	f
+ada#Completion_End	.\autoload\ada.vim	/^function ada#Completion_End ()$/;"	f
+ada#Create_Tags	.\autoload\ada.vim	/^function ada#Create_Tags (option)$/;"	f
+ada#Switch_Session	.\autoload\ada.vim	/^function ada#Switch_Session (New_Session)$/;"	f
+s:Fold_Collate	.\autoload\ada.vim	/^   let s:Fold_Collate = '^\\([;)]*$\\|'$/;"	v
+s:Fold_Collate	.\autoload\ada.vim	/^      let s:Fold_Collate .= '\\s\\+\\<is\\>$\\|'$/;"	v
+s:Fold_Collate	.\autoload\ada.vim	/^      let s:Fold_Collate .= '\\s\\+\\<begin\\>$\\|'$/;"	v
+s:Fold_Collate	.\autoload\ada.vim	/^      let s:Fold_Collate .= '\\s\\+\\<private\\>$\\|'$/;"	v
+s:Fold_Collate	.\autoload\ada.vim	/^      let s:Fold_Collate .= '\\s\\+\\<exception\\>$\\|'$/;"	v
+s:Fold_Collate	.\autoload\ada.vim	/^   let s:Fold_Collate .= '--\\)'$/;"	v
+ada#Pretty_Print_Folding	.\autoload\ada.vim	/^   function ada#Pretty_Print_Folding (Line)			     " {{{2$/;"	f
+ada#Switch_Syntax_Option	.\autoload\ada.vim	/^function ada#Switch_Syntax_Option (option)$/;"	f
+ada#Map_Menu	.\autoload\ada.vim	/^function ada#Map_Menu (Text, Keys, Command)$/;"	f
+ada#Map_Popup	.\autoload\ada.vim	/^function ada#Map_Popup (Text, Keys, Command)$/;"	f
+adacomplete#Complete	.\autoload\adacomplete.vim	/^function! adacomplete#Complete (findstart, base)$/;"	f
+s:cpo_save	.\autoload\ccomplete.vim	/^let s:cpo_save = &cpo$/;"	v
+ccomplete#Complete	.\autoload\ccomplete.vim	/^function! ccomplete#Complete(findstart, base)$/;"	f
+GetAddition	.\autoload\ccomplete.vim	/^function! s:GetAddition(line, match, memarg, bracket)$/;"	f
+Tag2item	.\autoload\ccomplete.vim	/^function! s:Tag2item(val)$/;"	f
+Dict2info	.\autoload\ccomplete.vim	/^function! s:Dict2info(dict)$/;"	f
+ParseTagline	.\autoload\ccomplete.vim	/^function! s:ParseTagline(line)$/;"	f
+Tagline2item	.\autoload\ccomplete.vim	/^function! s:Tagline2item(val, brackets)$/;"	f
+Tagcmd2extra	.\autoload\ccomplete.vim	/^function! s:Tagcmd2extra(cmd, name, fname)$/;"	f
+Nextitem	.\autoload\ccomplete.vim	/^function! s:Nextitem(lead, items, depth, all)$/;"	f
+StructMembers	.\autoload\ccomplete.vim	/^function! s:StructMembers(typename, items, all)$/;"	f
+SearchMembers	.\autoload\ccomplete.vim	/^function! s:SearchMembers(matches, items, all)$/;"	f
+s:words	.\autoload\clojurecomplete.vim	/^let s:words = ["*","*'","*1","*2","*3","*agent*","*allow-unresolved-vars*","*assert*","*clojure-version*","*command-line-args*","*compile-files*","*compile-path*","*compiler-options*","*data-readers*","*default-data-reader-fn*","*e","*err*","*file*","*flush-on-newline*","*fn-loader*","*in*","*math-context*","*ns*","*out*","*print-dup*","*print-length*","*print-level*","*print-meta*","*print-readably*","*read-eval*","*source-path*","*unchecked-math*","*use-context-classloader*","*verbose-defrecords*","*warn-on-reflection*","+","+'","-","-'","->","->>","->ArrayChunk","->Vec","->VecNode","->VecSeq","-cache-protocol-fn","-reset-methods",".","..","\/","<","<=","=","==",">",">=","EMPTY-NODE","accessor","aclone","add-classpath","add-watch","agent","agent-error","agent-errors","aget","alength","alias","all-ns","alter","alter-meta!","alter-var-root","amap","ancestors","and","apply","areduce","array-map","as->","aset","aset-boolean","aset-byte","aset-char","aset-double","aset-float","aset-int","aset-long","aset-short","assert","assoc!","assoc","assoc-in","associative?","atom","await","await-for","await1","bases","bean","bigdec","bigint","biginteger","binding","bit-and","bit-and-not","bit-clear","bit-flip","bit-not","bit-or","bit-set","bit-shift-left","bit-shift-right","bit-test","bit-xor","boolean","boolean-array","booleans","bound-fn","bound-fn*","bound?","butlast","byte","byte-array","bytes","case","cast","catch","char","char-array","char-escape-string","char-name-string","char?","chars","chunk","chunk-append","chunk-buffer","chunk-cons","chunk-first","chunk-next","chunk-rest","chunked-seq?","class","class?","clear-agent-errors","clojure-version","coll?","comment","commute","comp","comparator","compare","compare-and-set!","compile","complement","concat","cond","cond->","cond->>","condp","conj!","conj","cons","constantly","construct-proxy","contains?","count","counted?","create-ns","create-struct","cycle","dec","dec'","decimal?","declare","def","default-data-readers","definline","definterface","defmacro","defmethod","defmulti","defn","defn-","defonce","defprotocol","defrecord","defstruct","deftype","delay","delay?","deliver","denominator","deref","derive","descendants","destructure","disj!","disj","dissoc!","dissoc","distinct","distinct?","do","doall","dorun","doseq","dosync","dotimes","doto","double","double-array","doubles","drop","drop-last","drop-while","empty","empty?","ensure","enumeration-seq","error-handler","error-mode","eval","even?","every-pred","every?","ex-data","ex-info","extend","extend-protocol","extend-type","extenders","extends?","false?","ffirst","file-seq","filter","filterv","finally","find","find-keyword","find-ns","find-protocol-impl","find-protocol-method","find-var","first","flatten","float","float-array","float?","floats","flush","fn","fn","fn?","fnext","fnil","for","force","format","frequencies","future","future-call","future-cancel","future-cancelled?","future-done?","future?","gen-class","gen-interface","gensym","get","get-in","get-method","get-proxy-class","get-thread-bindings","get-validator","group-by","hash","hash-combine","hash-map","hash-ordered-coll","hash-set","hash-unordered-coll","identical?","identity","if","if-let","if-not","if-some","ifn?","import","in-ns","inc","inc'","init-proxy","instance?","int","int-array","integer?","interleave","intern","interpose","into","into-array","ints","io!","isa?","iterate","iterator-seq","juxt","keep","keep-indexed","key","keys","keyword","keyword?","last","lazy-cat","lazy-seq","let","let","letfn","line-seq","list","list*","list?","load","load-file","load-reader","load-string","loaded-libs","locking","long","long-array","longs","loop","loop","macroexpand","macroexpand-1","make-array","make-hierarchy","map","map-indexed","map?","mapcat","mapv","max","max-key","memfn","memoize","merge","merge-with","meta","method-sig","methods","min","min-key","mix-collection-hash","mod","monitor-enter","monitor-exit","munge","name","namespace","namespace-munge","neg?","new","newline","next","nfirst","nil?","nnext","not","not-any?","not-empty","not-every?","not=","ns","ns-aliases","ns-imports","ns-interns","ns-map","ns-name","ns-publics","ns-refers","ns-resolve","ns-unalias","ns-unmap","nth","nthnext","nthrest","num","number?","numerator","object-array","odd?","or","parents","partial","partition","partition-all","partition-by","pcalls","peek","persistent!","pmap","pop!","pop","pop-thread-bindings","pos?","pr","pr-str","prefer-method","prefers","primitives-classnames","print","print-ctor","print-dup","print-method","print-simple","print-str","printf","println","println-str","prn","prn-str","promise","proxy","proxy-call-with-super","proxy-mappings","proxy-name","proxy-super","push-thread-bindings","pvalues","quot","quote","rand","rand-int","rand-nth","range","ratio?","rational?","rationalize","re-find","re-groups","re-matcher","re-matches","re-pattern","re-seq","read","read-line","read-string","realized?","record?","recur","reduce","reduce-kv","reduced","reduced?","reductions","ref","ref-history-count","ref-max-history","ref-min-history","ref-set","refer","refer-clojure","reify","release-pending-sends","rem","remove","remove-all-methods","remove-method","remove-ns","remove-watch","repeat","repeatedly","replace","replicate","require","reset!","reset-meta!","resolve","rest","restart-agent","resultset-seq","reverse","reversible?","rseq","rsubseq","satisfies?","second","select-keys","send","send-off","send-via","seq","seq?","seque","sequence","sequential?","set!","set","set-agent-send-executor!","set-agent-send-off-executor!","set-error-handler!","set-error-mode!","set-validator!","set?","short","short-array","shorts","shuffle","shutdown-agents","slurp","some","some->","some->>","some-fn","some?","sort","sort-by","sorted-map","sorted-map-by","sorted-set","sorted-set-by","sorted?","special-symbol?","spit","split-at","split-with","str","string?","struct","struct-map","subs","subseq","subvec","supers","swap!","symbol","symbol?","sync","take","take-last","take-nth","take-while","test","the-ns","thread-bound?","throw","time","to-array","to-array-2d","trampoline","transient","tree-seq","true?","try","type","unchecked-add","unchecked-add-int","unchecked-byte","unchecked-char","unchecked-dec","unchecked-dec-int","unchecked-divide-int","unchecked-double","unchecked-float","unchecked-inc","unchecked-inc-int","unchecked-int","unchecked-long","unchecked-multiply","unchecked-multiply-int","unchecked-negate","unchecked-negate-int","unchecked-remainder-int","unchecked-short","unchecked-subtract","unchecked-subtract-int","underive","unquote","unquote-splicing","unsigned-bit-shift-right","update-in","update-proxy","use","val","vals","var","var-get","var-set","var?","vary-meta","vec","vector","vector-of","vector?","when","when-first","when-let","when-not","when-some","while","with-bindings","with-bindings*","with-in-str","with-loading-context","with-local-vars","with-meta","with-open","with-out-str","with-precision","with-redefs","with-redefs-fn","xml-seq","zero?","zipmap"]$/;"	v
+clojurecomplete#Complete	.\autoload\clojurecomplete.vim	/^function! clojurecomplete#Complete(findstart, base)$/;"	f
+s:values	.\autoload\csscomplete.vim	/^	let s:values = split("azimuth background background-attachment background-color background-image background-position background-repeat border bottom border-collapse border-color border-spacing border-style border-top border-right border-bottom border-left border-top-color border-right-color border-bottom-color border-left-color  border-top-style border-right-style border-bottom-style border-left-style border-top-width border-right-width border-bottom-width border-left-width border-width caption-side clear clip color content counter-increment counter-reset cue cue-after cue-before cursor display direction elevation empty-cells float font font-family font-size font-style font-variant font-weight height left letter-spacing line-height list-style list-style-image list-style-position list-style-type margin margin-right margin-left margin-top margin-bottom max-height max-width min-height min-width orphans outline outline-color outline-style outline-width overflow padding padding-top padding-right padding-bottom padding-left page-break-after page-break-before page-break-inside pause pause-after pause-before pitch pitch-range play-during position quotes right richness speak speak-header speak-numeral speak-punctuation speech-rate stress table-layout text-align text-decoration text-indent text-transform top unicode-bidi vertical-align visibility voice-family volume white-space width widows word-spacing z-index")$/;"	v
+csscomplete#CompleteCSS	.\autoload\csscomplete.vim	/^function! csscomplete#CompleteCSS(findstart, base)$/;"	f
+decada#Unit_Name	.\autoload\decada.vim	/^function decada#Unit_Name () dict				     " {{{1$/;"	f
+decada#Make	.\autoload\decada.vim	/^function decada#Make () dict					     " {{{1$/;"	f
+decada#Set_Session	.\autoload\decada.vim	/^function decada#Set_Session (...) dict				     " {{{1$/;"	f
+decada#New	.\autoload\decada.vim	/^function decada#New ()						     " }}}1$/;"	f
+g:loaded_getscript	.\autoload\getscript.vim	/^let g:loaded_getscript= "v36"$/;"	v
+s:keepcpo	.\autoload\getscript.vim	/^let s:keepcpo = &cpo$/;"	v
+g:getscript_cygwin	.\autoload\getscript.vim	/^   let g:getscript_cygwin= 1$/;"	v
+g:getscript_cygwin	.\autoload\getscript.vim	/^   let g:getscript_cygwin= 0$/;"	v
+g:getscript_cygwin	.\autoload\getscript.vim	/^  let g:getscript_cygwin= 0$/;"	v
+g:GetLatestVimScripts_wget	.\autoload\getscript.vim	/^  let g:GetLatestVimScripts_wget= "wget"$/;"	v
+g:GetLatestVimScripts_wget	.\autoload\getscript.vim	/^  let g:GetLatestVimScripts_wget= "curl"$/;"	v
+g:GetLatestVimScripts_wget	.\autoload\getscript.vim	/^  let g:GetLatestVimScripts_wget    = 'echo "GetLatestVimScripts needs wget or curl"'$/;"	v
+g:GetLatestVimScripts_options	.\autoload\getscript.vim	/^  let g:GetLatestVimScripts_options = ""$/;"	v
+g:GetLatestVimScripts_options	.\autoload\getscript.vim	/^  let g:GetLatestVimScripts_options= "-q -O"$/;"	v
+g:GetLatestVimScripts_options	.\autoload\getscript.vim	/^  let g:GetLatestVimScripts_options= "-s -O"$/;"	v
+g:GetLatestVimScripts_options	.\autoload\getscript.vim	/^  let g:GetLatestVimScripts_options= ""$/;"	v
+g:GetLatestVimScripts_allowautoinstall	.\autoload\getscript.vim	/^ let g:GetLatestVimScripts_allowautoinstall= 1$/;"	v
+g:GetLatestVimScripts_scriptaddr	.\autoload\getscript.vim	/^ let g:GetLatestVimScripts_scriptaddr = 'http:\/\/vim.sourceforge.net\/script.php?script_id='$/;"	v
+s:autoinstall	.\autoload\getscript.vim	/^let s:autoinstall= ""$/;"	v
+s:dotvim	.\autoload\getscript.vim	/^  let s:dotvim= "vimfiles"$/;"	v
+g:GetLatestVimScripts_mv	.\autoload\getscript.vim	/^   let g:GetLatestVimScripts_mv= "ren"$/;"	v
+s:dotvim	.\autoload\getscript.vim	/^  let s:dotvim= ".vim"$/;"	v
+g:GetLatestVimScripts_mv	.\autoload\getscript.vim	/^   let g:GetLatestVimScripts_mv= "mv"$/;"	v
+s:autoinstall	.\autoload\getscript.vim	/^  let s:autoinstall= g:GetLatestVimScripts_autoinstalldir"$/;"	v
+s:autoinstall	.\autoload\getscript.vim	/^  let s:autoinstall= $HOME."\/".s:dotvim$/;"	v
+GetLatestVimScripts	.\autoload\getscript.vim	/^com!        -nargs=0 GetLatestVimScripts call getscript#GetLatestVimScripts()$/;"	c
+GetScript	.\autoload\getscript.vim	/^com!        -nargs=0 GetScript           call getscript#GetLatestVimScripts()$/;"	c
+getscript#GetLatestVimScripts	.\autoload\getscript.vim	/^fun! getscript#GetLatestVimScripts()$/;"	f
+GetOneScript	.\autoload\getscript.vim	/^fun! s:GetOneScript(...)$/;"	f
+gnat#Make	.\autoload\gnat.vim	/^function gnat#Make () dict					     " {{{1$/;"	f
+gnat#Pretty	.\autoload\gnat.vim	/^function gnat#Pretty () dict					     " {{{1$/;"	f
+gnat#Find	.\autoload\gnat.vim	/^function gnat#Find () dict					     " {{{1$/;"	f
+gnat#Tags	.\autoload\gnat.vim	/^function gnat#Tags () dict					     " {{{1$/;"	f
+gnat#Set_Project_File	.\autoload\gnat.vim	/^function gnat#Set_Project_File (...) dict			     " {{{1$/;"	f
+gnat#Get_Command	.\autoload\gnat.vim	/^function gnat#Get_Command (Command) dict			     " {{{1$/;"	f
+gnat#Set_Session	.\autoload\gnat.vim	/^function gnat#Set_Session (...) dict				     " {{{1$/;"	f
+gnat#New	.\autoload\gnat.vim	/^function gnat#New ()						     " {{{1$/;"	f
+gnat#Insert_Tags_Header	.\autoload\gnat.vim	/^function gnat#Insert_Tags_Header ()				  " {{{1$/;"	f
+check	.\autoload\gzip.vim	/^fun s:check(cmd)$/;"	f
+set_compression	.\autoload\gzip.vim	/^fun s:set_compression(line)$/;"	f
+gzip#read	.\autoload\gzip.vim	/^fun gzip#read(cmd)$/;"	f
+gzip#write	.\autoload\gzip.vim	/^fun gzip#write(cmd)$/;"	f
+gzip#appre	.\autoload\gzip.vim	/^fun gzip#appre(cmd)$/;"	f
+tempname	.\autoload\gzip.vim	/^fun s:tempname(name)$/;"	f
+escape	.\autoload\gzip.vim	/^fun s:escape(name)$/;"	f
+htmlcomplete#DetectOmniFlavor	.\autoload\htmlcomplete.vim	/^function! htmlcomplete#DetectOmniFlavor()$/;"	f
+htmlcomplete#CompleteTags	.\autoload\htmlcomplete.vim	/^function! htmlcomplete#CompleteTags(findstart, base)$/;"	f
+htmlcomplete#LoadData	.\autoload\htmlcomplete.vim	/^function! htmlcomplete#LoadData() " {{{$/;"	f
+htmlcomplete#CheckDoctype	.\autoload\htmlcomplete.vim	/^function! htmlcomplete#CheckDoctype() " {{{$/;"	f
+javascriptcomplete#CompleteJS	.\autoload\javascriptcomplete.vim	/^function! javascriptcomplete#CompleteJS(findstart, base)$/;"	f
+s:needpatch213	.\autoload\netrw.vim	/^ let s:needpatch213= 1$/;"	v
+g:loaded_netrw	.\autoload\netrw.vim	/^let g:loaded_netrw = "v152"$/;"	v
+s:NOTE	.\autoload\netrw.vim	/^ let s:NOTE    = 0$/;"	v
+s:WARNING	.\autoload\netrw.vim	/^ let s:WARNING = 1$/;"	v
+s:ERROR	.\autoload\netrw.vim	/^ let s:ERROR   = 2$/;"	v
+s:keepcpo	.\autoload\netrw.vim	/^let s:keepcpo= &cpo$/;"	v
+netrw#ErrorMsg	.\autoload\netrw.vim	/^fun! netrw#ErrorMsg(level,msg,errnum)$/;"	f
+NetrwInit	.\autoload\netrw.vim	/^fun s:NetrwInit(varname,value)$/;"	f
+g:netrw_dav_cmd	.\autoload\netrw.vim	/^  let g:netrw_dav_cmd	= "cadaver"$/;"	v
+g:netrw_dav_cmd	.\autoload\netrw.vim	/^  let g:netrw_dav_cmd	= "curl"$/;"	v
+g:netrw_dav_cmd	.\autoload\netrw.vim	/^  let g:netrw_dav_cmd   = ""$/;"	v
+g:netrw_fetch_cmd	.\autoload\netrw.vim	/^  let g:netrw_fetch_cmd	= "fetch -o"$/;"	v
+g:netrw_fetch_cmd	.\autoload\netrw.vim	/^  let g:netrw_fetch_cmd	= ""$/;"	v
+g:netrw_ftp_cmd	.\autoload\netrw.vim	/^  let g:netrw_ftp_cmd	= "ftp"$/;"	v
+s:netrw_ftp_cmd	.\autoload\netrw.vim	/^let s:netrw_ftp_cmd= g:netrw_ftp_cmd$/;"	v
+g:netrw_ftp_options	.\autoload\netrw.vim	/^ let g:netrw_ftp_options= "-i -n"$/;"	v
+g:netrw_http_cmd	.\autoload\netrw.vim	/^  let g:netrw_http_cmd = "elinks"$/;"	v
+g:netrw_http_cmd	.\autoload\netrw.vim	/^  let g:netrw_http_cmd = "links"$/;"	v
+g:netrw_http_cmd	.\autoload\netrw.vim	/^  let g:netrw_http_cmd	= "curl"$/;"	v
+g:netrw_http_cmd	.\autoload\netrw.vim	/^  let g:netrw_http_cmd	= "wget"$/;"	v
+g:netrw_http_cmd	.\autoload\netrw.vim	/^  let g:netrw_http_cmd	= "fetch"$/;"	v
+g:netrw_http_cmd	.\autoload\netrw.vim	/^  let g:netrw_http_cmd	= ""$/;"	v
+s:netrw_has_nt_rcp	.\autoload\netrw.vim	/^ let s:netrw_has_nt_rcp = 1$/;"	v
+s:netrw_rcpmode	.\autoload\netrw.vim	/^ let s:netrw_rcpmode    = '-b'$/;"	v
+s:netrw_has_nt_rcp	.\autoload\netrw.vim	/^ let s:netrw_has_nt_rcp = 0$/;"	v
+s:netrw_rcpmode	.\autoload\netrw.vim	/^ let s:netrw_rcpmode    = ''$/;"	v
+g:netrw_cygwin	.\autoload\netrw.vim	/^   let g:netrw_cygwin= 1$/;"	v
+g:netrw_cygwin	.\autoload\netrw.vim	/^   let g:netrw_cygwin= 0$/;"	v
+g:netrw_cygwin	.\autoload\netrw.vim	/^  let g:netrw_cygwin= 0$/;"	v
+g:netrw_cursor	.\autoload\netrw.vim	/^ let g:netrw_cursor= g:netrw_cursorline$/;"	v
+s:netrw_usercul	.\autoload\netrw.vim	/^let s:netrw_usercul = &cursorline$/;"	v
+s:netrw_usercuc	.\autoload\netrw.vim	/^let s:netrw_usercuc = &cursorcolumn$/;"	v
+g:netrw_ftp_list_cmd	.\autoload\netrw.vim	/^  let g:netrw_ftp_list_cmd     = "ls -lF"$/;"	v
+g:netrw_ftp_timelist_cmd	.\autoload\netrw.vim	/^  let g:netrw_ftp_timelist_cmd = "ls -tlF"$/;"	v
+g:netrw_ftp_sizelist_cmd	.\autoload\netrw.vim	/^  let g:netrw_ftp_sizelist_cmd = "ls -slF"$/;"	v
+g:netrw_ftp_list_cmd	.\autoload\netrw.vim	/^  let g:netrw_ftp_list_cmd     = "dir"$/;"	v
+g:netrw_ftp_timelist_cmd	.\autoload\netrw.vim	/^  let g:netrw_ftp_timelist_cmd = "dir"$/;"	v
+g:netrw_ftp_sizelist_cmd	.\autoload\netrw.vim	/^  let g:netrw_ftp_sizelist_cmd = "dir"$/;"	v
+g:netrw_ignorenetrc	.\autoload\netrw.vim	/^  let g:netrw_ignorenetrc= 1$/;"	v
+g:netrw_ignorenetrc	.\autoload\netrw.vim	/^  let g:netrw_ignorenetrc= 0$/;"	v
+g:netrw_scp_cmd	.\autoload\netrw.vim	/^   let g:netrw_scp_cmd ="pscp -i C:\\\\private.ppk"$/;"	v
+g:netrw_list_cmd	.\autoload\netrw.vim	/^  let g:netrw_list_cmd= g:netrw_scp_cmd." -ls USEPORT HOSTNAME:"$/;"	v
+g:netrw_list_cmd	.\autoload\netrw.vim	/^  let g:netrw_list_cmd= g:netrw_ssh_cmd." USEPORT HOSTNAME ls -FLa"$/;"	v
+g:netrw_list_cmd	.\autoload\netrw.vim	/^  let g:netrw_list_cmd= ""$/;"	v
+g:netrw_localcopycmd	.\autoload\netrw.vim	/^ let g:netrw_localcopycmd= g:netrw_local_copycmd$/;"	v
+g:netrw_localcmdshell	.\autoload\netrw.vim	/^ let g:netrw_localcmdshell= ""$/;"	v
+g:netrw_localcopycmd	.\autoload\netrw.vim	/^   let g:netrw_localcopycmd= "cp"$/;"	v
+g:netrw_localcopycmd	.\autoload\netrw.vim	/^   let g:netrw_localcopycmd= expand("$COMSPEC")." \/c copy"$/;"	v
+g:netrw_localcopycmd	.\autoload\netrw.vim	/^  let g:netrw_localcopycmd= "cp"$/;"	v
+g:netrw_localcopycmd	.\autoload\netrw.vim	/^  let g:netrw_localcopycmd= ""$/;"	v
+g:netrw_localmkdir	.\autoload\netrw.vim	/^ let g:netrw_localmkdir= g:netrw_local_mkdir$/;"	v
+g:netrw_localmkdir	.\autoload\netrw.vim	/^   let g:netrw_localmkdir= expand("$COMSPEC")." \/c mkdir"$/;"	v
+g:netrw_localmovecmd	.\autoload\netrw.vim	/^ let g:netrw_localmovecmd= g:netrw_local_movecmd$/;"	v
+g:netrw_localmovecmd	.\autoload\netrw.vim	/^   let g:netrw_localmovecmd= "mv"$/;"	v
+g:netrw_localmovecmd	.\autoload\netrw.vim	/^   let g:netrw_localmovecmd= expand("$COMSPEC")." \/c move"$/;"	v
+g:netrw_localmovecmd	.\autoload\netrw.vim	/^  let g:netrw_localmovecmd= "mv"$/;"	v
+g:netrw_localmovecmd	.\autoload\netrw.vim	/^  let g:netrw_localmovecmd= ""$/;"	v
+g:netrw_localrmdir	.\autoload\netrw.vim	/^ let g:netrw_localrmdir= g:netrw_local_rmdir$/;"	v
+g:netrw_localrmdir	.\autoload\netrw.vim	/^   let g:netrw_localrmdir= expand("$COMSPEC")." \/c rmdir"$/;"	v
+g:netrw_liststyle	.\autoload\netrw.vim	/^ let g:netrw_liststyle= s:THINLIST$/;"	v
+g:netrw_list_cmd	.\autoload\netrw.vim	/^ let g:netrw_list_cmd= g:netrw_list_cmd." -l"$/;"	v
+s:QuickHelp	.\autoload\netrw.vim	/^let s:QuickHelp= ["-:go up dir  D:delete  R:rename  s:sort-by  x:special",$/;"	v
+g:netrw_sort_sequence	.\autoload\netrw.vim	/^  let g:netrw_sort_sequence= '[\\\/]$,\\<core\\%(\\.\\d\\+\\)\\=\\>,\\.h$,\\.c$,\\.cpp$,\\~\\=\\*$,*,\\.o$,\\.obj$,\\.info$,\\.swp$,\\.bak$,\\~$'$/;"	v
+g:netrw_sort_sequence	.\autoload\netrw.vim	/^  let g:netrw_sort_sequence= '[\\\/]$,\\.h$,\\.c$,\\.cpp$,*,\\.o$,\\.obj$,\\.info$,\\.swp$,\\.bak$,\\~$'$/;"	v
+g:netrw_xstrlen	.\autoload\netrw.vim	/^  let g:netrw_xstrlen= g:Align_xstrlen$/;"	v
+g:netrw_xstrlen	.\autoload\netrw.vim	/^  let g:netrw_xstrlen= g:drawit_xstrlen$/;"	v
+g:netrw_xstrlen	.\autoload\netrw.vim	/^  let g:netrw_xstrlen= 0$/;"	v
+g:netrw_xstrlen	.\autoload\netrw.vim	/^  let g:netrw_xstrlen= 1$/;"	v
+s:treedepthstring	.\autoload\netrw.vim	/^ let s:treedepthstring= "│ "$/;"	v
+s:treedepthstring	.\autoload\netrw.vim	/^ let s:treedepthstring= "| "$/;"	v
+netrw#BalloonHelp	.\autoload\netrw.vim	/^ fun! netrw#BalloonHelp()$/;"	f
+netrw#Explore	.\autoload\netrw.vim	/^fun! netrw#Explore(indx,dosplit,style,...)$/;"	f
+netrw#Lexplore	.\autoload\netrw.vim	/^fun! netrw#Lexplore(...)$/;"	f
+netrw#Clean	.\autoload\netrw.vim	/^fun! netrw#Clean(sys)$/;"	f
+netrw#MakeTgt	.\autoload\netrw.vim	/^fun! netrw#MakeTgt(dname)$/;"	f
+netrw#Obtain	.\autoload\netrw.vim	/^fun! netrw#Obtain(islocal,fname,...)$/;"	f
+netrw#Nread	.\autoload\netrw.vim	/^fun! netrw#Nread(mode,fname)$/;"	f
+NetrwOptionRestore	.\autoload\netrw.vim	/^fun! s:NetrwOptionRestore(vt)$/;"	f
+NetrwOptionSave	.\autoload\netrw.vim	/^fun! s:NetrwOptionSave(vt)$/;"	f
+NetrwSafeOptions	.\autoload\netrw.vim	/^fun! s:NetrwSafeOptions()$/;"	f
+NetrwStatusLine	.\autoload\netrw.vim	/^fun! NetrwStatusLine()$/;"	f
+netrw#NetRead	.\autoload\netrw.vim	/^fun! netrw#NetRead(mode,...)$/;"	f
+netrw#NetWrite	.\autoload\netrw.vim	/^fun! netrw#NetWrite(...) range$/;"	f
+netrw#NetSource	.\autoload\netrw.vim	/^fun! netrw#NetSource(...)$/;"	f
+netrw#SetTreetop	.\autoload\netrw.vim	/^fun! netrw#SetTreetop(...)$/;"	f
+NetrwGetFile	.\autoload\netrw.vim	/^fun! s:NetrwGetFile(readcmd, tfile, method)$/;"	f
+NetrwMethod	.\autoload\netrw.vim	/^fun! s:NetrwMethod(choice)$/;"	f
+NetReadFixup	.\autoload\netrw.vim	/^ fun! NetReadFixup(method, line1, line2)$/;"	f
+NetUserPass	.\autoload\netrw.vim	/^fun! NetUserPass(...)$/;"	f
+ExplorePatHls	.\autoload\netrw.vim	/^fun! s:ExplorePatHls(pattern)$/;"	f
+NetrwBookHistHandler	.\autoload\netrw.vim	/^fun! s:NetrwBookHistHandler(chg,curdir)$/;"	f
+NetrwBookHistRead	.\autoload\netrw.vim	/^fun! s:NetrwBookHistRead()$/;"	f
+NetrwBookHistSave	.\autoload\netrw.vim	/^fun! s:NetrwBookHistSave()$/;"	f
+NetrwBrowse	.\autoload\netrw.vim	/^fun! s:NetrwBrowse(islocal,dirname)$/;"	f
+NetrwFileInfo	.\autoload\netrw.vim	/^fun! s:NetrwFileInfo(islocal,fname)$/;"	f
+NetrwGetBuffer	.\autoload\netrw.vim	/^fun! s:NetrwGetBuffer(islocal,dirname)$/;"	f
+NetrwGetcwd	.\autoload\netrw.vim	/^fun! s:NetrwGetcwd(doesc)$/;"	f
+NetrwGetWord	.\autoload\netrw.vim	/^fun! s:NetrwGetWord()$/;"	f
+NetrwListSettings	.\autoload\netrw.vim	/^fun! s:NetrwListSettings(islocal)$/;"	f
+NetrwListStyle	.\autoload\netrw.vim	/^fun! s:NetrwListStyle(islocal)$/;"	f
+NetrwBannerCtrl	.\autoload\netrw.vim	/^fun! s:NetrwBannerCtrl(islocal)$/;"	f
+NetrwBookmarkMenu	.\autoload\netrw.vim	/^fun! s:NetrwBookmarkMenu()$/;"	f
+NetrwBrowseChgDir	.\autoload\netrw.vim	/^fun! s:NetrwBrowseChgDir(islocal,newdir,...)$/;"	f
+NetrwBrowseUpDir	.\autoload\netrw.vim	/^fun! s:NetrwBrowseUpDir(islocal)$/;"	f
+netrw#NetrwBrowseX	.\autoload\netrw.vim	/^fun! netrw#NetrwBrowseX(fname,remote)$/;"	f
+NetrwChgPerm	.\autoload\netrw.vim	/^fun! s:NetrwChgPerm(islocal,curdir)$/;"	f
+NetrwClearExplore	.\autoload\netrw.vim	/^fun! s:NetrwClearExplore()$/;"	f
+NetrwExploreListUniq	.\autoload\netrw.vim	/^fun! s:NetrwExploreListUniq(explist)$/;"	f
+NetrwForceChgDir	.\autoload\netrw.vim	/^fun! s:NetrwForceChgDir(islocal,newdir)$/;"	f
+NetrwForceFile	.\autoload\netrw.vim	/^fun! s:NetrwForceFile(islocal,newfile)$/;"	f
+NetrwHide	.\autoload\netrw.vim	/^fun! s:NetrwHide(islocal)$/;"	f
+NetrwHidden	.\autoload\netrw.vim	/^fun! s:NetrwHidden(islocal)$/;"	f
+NetrwHome	.\autoload\netrw.vim	/^fun! s:NetrwHome()$/;"	f
+NetrwLeftmouse	.\autoload\netrw.vim	/^fun! s:NetrwLeftmouse(islocal)$/;"	f
+NetrwSLeftmouse	.\autoload\netrw.vim	/^fun! s:NetrwSLeftmouse(islocal)$/;"	f
+NetrwSLeftdrag	.\autoload\netrw.vim	/^fun! s:NetrwSLeftdrag(islocal)$/;"	f
+NetrwSLeftrelease	.\autoload\netrw.vim	/^fun! s:NetrwSLeftrelease(islocal)$/;"	f
+NetrwListHide	.\autoload\netrw.vim	/^fun! s:NetrwListHide()$/;"	f
+NetrwHideEdit	.\autoload\netrw.vim	/^fun! s:NetrwHideEdit(islocal)$/;"	f
+NetSortSequence	.\autoload\netrw.vim	/^fun! s:NetSortSequence(islocal)$/;"	f
+NetrwMakeDir	.\autoload\netrw.vim	/^fun! s:NetrwMake
