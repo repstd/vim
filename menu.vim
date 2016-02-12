@@ -16,6 +16,7 @@ set cpo&vim
 if !exists("did_install_default_menus")
 let did_install_default_menus = 1
 
+
 if exists("v:lang") || &langmenu != ""
   " Try to find a menu translation file for the current language.
   if &langmenu != ""
