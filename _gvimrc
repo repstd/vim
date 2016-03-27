@@ -97,6 +97,10 @@ set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 set fileencoding=utf-8
 set encoding=utf-8
 
+"optional features for vim-cpp-enhanced-highlight
+let g:cpp_class_scope_highlight = 1
+let g:cpp_experimental_template_highlight = 1
+
 map <F4> :emenu <C-Z>
 nmap <Esc>[5D :bp<CR>
 nmap <Esc>Od  :bp<CR>
@@ -110,8 +114,9 @@ nmap <Esc>bbb :!python %<CR>
 nmap <Esc>mc :!gcc -Wall -g % -o a.out && a.out && rm a.out<CR>
 nmap <Esc>mx :!g++ -Wall -g % -o a.out && a.out && rm a.out <CR>
 nmap <Esc>mz :!g++ -std=c++0x -Wall -g % -o a.out && a.out && rm a.out<CR>
-nmap <Esc>md :!g++ -std=c++0x -Wall -g % -o a.out && gdb a.out && rm a.out<CR>
+nmap <Esc>md :!g++ -std=c++0x  -g % -o a.out && gdb a.out && rm a.out<CR>
 nmap <Esc>mp :!php %<CR>
+nmap <Esc>mn :!node %<CR>
 nmap <Esc>bj :!javac Solution.java && java Solution<CR>
 nmap <Esc>gh :!ghci %<CR>
 nmap <Esc>rh :!runhaskell %<CR>

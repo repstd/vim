@@ -17,10 +17,10 @@ let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
 let g:neocomplete#enable_refresh_always = 1
 " Enable heavy features.
 " Use camel case completion.
-let g:neocomplcache_enable_camel_case_completion = 0
+let g:neocomplcache_enable_camel_case_completion = 1
 
 " Use underbar completion.
-let g:neocomplcache_enable_underbar_completion = 0
+let g:neocomplcache_enable_underbar_completion = 1
 
 " Define dictionary.
 let g:neocomplcache_dictionary_filetype_lists = {
@@ -77,12 +77,15 @@ let g:neocomplcache_disable_auto_complete = 1
 inoremap <expr><TAB>  pumvisible() ? "\<Down>" : "\<C-x>\<C-u>"
 
 " Enable omni completion.
+filetype plugin on
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+autocmd FileType java set omnifunc=javacomplete#Complete
+"au FileType javascript call JavaScriptFold()
 
 " Enable heavy omni completion.
 if !exists('g:neocomplcache_force_omni_patterns')

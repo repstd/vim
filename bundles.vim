@@ -22,13 +22,16 @@ Bundle 'Shougo/neocomplete'
 Bundle 'honza/vim-snippets'
 Bundle 'ervandew/supertab'
 Plugin 'SirVer/ultisnips'
-" Bundle 'honza/snipmate-snippets'
+"Plugin 'honza/snipmate-snippets'
 " Bundle 'mattn/zencoding-vim'
 " Bundle 'Raimondi/delimitMate'
 "------ snipmate dependencies -------
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
-
+"Enhanced javascript syntax support
+Plugin 'jelera/vim-javascript-syntax'
+Plugin 'ternjs/tern_for_vim'
+Plugin 'derekwyatt/vim-scala'
 "-----------------
 " Fast navigation
 "-----------------
@@ -56,7 +59,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/syntastic'
 Bundle 'bronson/vim-trailing-whitespace'
-
+Plugin 'octol/vim-cpp-enhanced-highlight'
 "-------------
 " Other Utils
 "-------------
