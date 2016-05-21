@@ -55,7 +55,14 @@ set hlsearch
 "  let winhelpfile='windows.hlp'
 "  map K :execute "!start winhlp32 -k <cword> " . winhelpfile <CR>
 "endif
-
+" set local fileformat
+if has("win32")
+    setlocal ffs=dos
+elseif has("linux")
+    setlocal ffs=unix
+else
+    setlocal ffs=max
+endif
 " Set nice colors
 " background for normal text is light grey
 " Text below the last line is darker grey
