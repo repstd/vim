@@ -85,6 +85,7 @@ autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType java set omnifunc=javacomplete#Complete
+autocmd User Node if &filetype == "javascript" | setlocal expandtab | endif
 "au FileType javascript call JavaScriptFold()
 
 " Enable heavy omni completion.
