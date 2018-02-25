@@ -17,15 +17,15 @@
 let g:islinux=0
 source $VIM\bundles.vim
 "set guifont=gohufont-14
-set guifont=Ubuntu\ Mono:h12
+set guifont=Ubuntu\ Mono:h18
 
-"hide the menubar of gvim 
+"hide the menubar of gvim
 "set guioptions -=m
 
-"hide the toolbar of gvim 
+"hide the toolbar of gvim
 set guioptions -=T
 
-set guifont=Ubuntu\ Mono:h12
+set guifont=Ubuntu\ Mono:h18
 
 set ch=2		" Make command line two lines high
 
@@ -71,6 +71,21 @@ let g:molokai_original = 1
 let g:rehash256 = 1
 colorscheme molokai
 
+" Removes trailing spaces
+function TrimWhiteSpace()
+  %s/\s*$//
+  ''
+endfunction
+
+"set list listchars=trail:.,extends:>
+autocmd FileWritePre * call TrimWhiteSpace()
+autocmd FileAppendPre * call TrimWhiteSpace()
+autocmd FilterWritePre * call TrimWhiteSpace()
+autocmd BufWritePre * call TrimWhiteSpace()
+
+map <F2> :call TrimWhiteSpace()<CR>
+map! <F2> :call TrimWhiteSpace()<CR>
+
 set incsearch
 set autoindent
 set cindent
@@ -83,6 +98,7 @@ set softtabstop=4
 set expandtab
 set smarttab
 set autoindent
+set ffs=dos
 
 source $VIMRUNTIME/delmenu.vim
 source $VIMRUNTIME/menu.vim
@@ -98,6 +114,23 @@ set fileencoding=utf-8
 set encoding=utf-8
 set ssop-=options    " do not store global and local values in a session
 set ssop-=folds      " do not store folds
+if has('cscope')
+  set cscopetag cscopeverbose
+
+  if has('quickfix')
+    set cscopequickfix=s-,c-,d-,i-,t-,e-
+  endif
+
+  cnoreabbrev csa cs add
+  cnoreabbrev csf cs find
+  cnoreabbrev csk cs kill
+  cnoreabbrev csr cs reset
+  cnoreabbrev css cs show
+  cnoreabbrev csh cs help
+
+  command -nargs=0 Cscope cs add $VIMSRC/src/cscope.out $VIMSRC/src
+endif
+
 
 "optional features for vim-cpp-enhanced-highlight
 let g:cpp_class_scope_highlight = 1
@@ -124,10 +157,9 @@ nmap <Esc>gh :!ghci %<CR>
 nmap <Esc>rh :!runhaskell %<CR>
 nmap <Esc>[tg :!ctags -R .<CR>
 nmap <Esc>nl :nohlsearch<CR>
-nnoremap <F6> :NERDTree<CR>
 nnoremap <F10> :e $VIM\_gvimrc<CR>
 nnoremap <F11> :e $VIM\.vimrc<CR>
-map <C-\> :NERDTreeToggle<CR>
+map <C-Z> :NERDTreeToggle<CR>
 nnoremap <F8> :NERDTreeFind<CR>
 nnoremap <F9> :!ctags -R .<CR>
 map! <F3> a<C-R>=strftime('%c')<CR><Esc>
@@ -141,16 +173,16 @@ nmap <Esc>iu :tabp<CR>
 "let g:ycm_seed_identifiers_with_syntax = 0
 "let g:ycm_confirm_extra_conf=0
 "let g:ycm_key_invoke_completion = '<C-/>'
-"let g:ycm_complete_in_comments=1  
+"let g:ycm_complete_in_comments=1
 "let g:ycm_collect_identifiers_from_tags_files = 1
 "let g:ycm_min_num_of_chars_for_completion=1
 "autocmd InsertLeave * if pumvisible() == 0|pclose|endif
-"let g:ycm_cache_omnifunc=0  
-"let g:ycm_seed_identifiers_with_syntax=1  
-"let g:ycm_key_invoke_completion = '<M-;>'  
+"let g:ycm_cache_omnifunc=0
+"let g:ycm_seed_identifiers_with_syntax=1
+"let g:ycm_key_invoke_completion = '<M-;>'
 "nnoremap <F3> :YcmRestartServer<CR>
 "nnoremap <F5> :YcmForceCompileAndDiagnostics<CR>
-"nmap <F4> :YcmCompleter GoToDefinitionElseDeclaration <C-R>=expand("<cword>")<CR><CR> 
+"nmap <F4> :YcmCompleter GoToDefinitionElseDeclaration <C-R>=expand("<cword>")<CR><CR>
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
