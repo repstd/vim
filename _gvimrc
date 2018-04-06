@@ -25,7 +25,7 @@ set guifont=Ubuntu\ Mono:h18
 "hide the toolbar of gvim
 set guioptions -=T
 
-set guifont=Ubuntu\ Mono:h18
+set guifont=Ubuntu\ Mono:h12
 
 set ch=2		" Make command line two lines high
 
@@ -152,6 +152,7 @@ nmap <Esc>mz :!g++ -std=c++0x -Wall -g % -o a.out && a.out && rm a.out<CR>
 nmap <Esc>md :!g++ -std=c++0x  -g % -o a.out && gdb a.out && rm a.out<CR>
 nmap <Esc>mp :!php %<CR>
 nmap <Esc>mn :!node %<CR>
+nmap <Esc>mg :GoRun<CR>
 nmap <Esc>bj :!javac Solution.java && java Solution<CR>
 nmap <Esc>gh :!ghci %<CR>
 nmap <Esc>rh :!runhaskell %<CR>
@@ -187,4 +188,17 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 "
+"syntastic"
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+"
+let g:syntastic_python_checkers=['python']
+let g:syntastic_python_pylint_args='--disable=C0111,R0903,C0301'
+let g:go_disable_autoinstall = 0
+
 endif

@@ -1,6 +1,6 @@
 set nocompatible               " be iMproved
 filetype off                   " required!
-" 此处规定Vundle的路径  
+" 此处规定Vundle的路径
 if g:islinux
     set rtp+=~/.vim/bundle/vundle/
     call vundle#rc()
@@ -62,6 +62,8 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/syntastic'
 Bundle 'bronson/vim-trailing-whitespace'
 Plugin 'octol/vim-cpp-enhanced-highlight'
+Plugin 'fatih/vim-go'
+Plugin 'Blackrush/vim-gocode'
 "-------------
 " Other Utils
 "-------------
