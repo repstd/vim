@@ -56,6 +56,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/syntastic'
 Bundle 'bronson/vim-trailing-whitespace'
+Plugin 'frazrepo/vim-rainbow'
 
 "-------------
 " Other Utils
