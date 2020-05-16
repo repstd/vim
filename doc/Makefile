@@ -30,6 +30,7 @@ DOCS = \
 	filetype.txt \
 	fold.txt \
 	ft_ada.txt \
+	ft_rust.txt \
 	ft_sql.txt \
 	gui.txt \
 	gui_w32.txt \
@@ -63,6 +64,7 @@ DOCS = \
 	os_amiga.txt \
 	os_beos.txt \
 	os_dos.txt \
+	os_haiku.txt \
 	os_mac.txt \
 	os_mint.txt \
 	os_msdos.txt \
@@ -82,6 +84,7 @@ DOCS = \
 	pi_tar.txt \
 	pi_vimball.txt \
 	pi_zip.txt \
+	popup.txt \
 	print.txt \
 	quickfix.txt \
 	quickref.txt \
@@ -100,6 +103,9 @@ DOCS = \
 	tabpage.txt \
 	tagsrch.txt \
 	term.txt \
+	terminal.txt \
+	testing.txt \
+	textprop.txt \
 	tips.txt \
 	todo.txt \
 	uganda.txt \
@@ -144,6 +150,7 @@ DOCS = \
 	version7.txt \
 	version8.txt \
 	vi_diff.txt \
+	vim9.txt \
 	visual.txt \
 	windows.txt \
 	workshop.txt
@@ -165,6 +172,7 @@ HTMLS = \
 	filetype.html \
 	fold.html \
 	ft_ada.html \
+	ft_rust.html \
 	ft_sql.html \
 	gui.html \
 	gui_w32.html \
@@ -197,6 +205,7 @@ HTMLS = \
 	os_amiga.html \
 	os_beos.html \
 	os_dos.html \
+	os_haiku.html \
 	os_mac.html \
 	os_mint.html \
 	os_msdos.html \
@@ -216,6 +225,7 @@ HTMLS = \
 	pi_tar.html \
 	pi_vimball.html \
 	pi_zip.html \
+	popup.html \
 	print.html \
 	quickfix.html \
 	quickref.html \
@@ -234,6 +244,9 @@ HTMLS = \
 	tabpage.html \
 	tagsrch.html \
 	term.html \
+	terminal.html \
+	testing.html \
+	textprop.html \
 	tips.html \
 	todo.html \
 	uganda.html \
@@ -279,6 +292,7 @@ HTMLS = \
 	version8.html \
 	vi_diff.html \
 	vimindex.html \
+	vim9.html \
 	visual.html \
 	windows.html \
 	workshop.html
@@ -313,7 +327,7 @@ all: tags vim.man evim.man vimdiff.man vimtutor.man xxd.man $(CONVERTED)
 # Use Vim to generate the tags file.  Can only be used when Vim has been
 # compiled and installed.  Supports multiple languages.
 vimtags: $(DOCS)
-	$(VIMEXE) -u NONE -esX -c "helptags ++t ." -c quit
+	@$(VIMEXE) --clean -esX -V1 -u doctags.vim
 
 # Use "doctags" to generate the tags file.  Only works for English!
 tags: doctags $(DOCS)
@@ -339,7 +353,7 @@ xxd.man: xxd.1
 	nroff -man xxd.1 | sed -e s/.//g > xxd.man
 
 uganda.nsis.txt: uganda.txt
-	sed -e 's/[ 	]*\*[-a-zA-Z0-9.]*\*//g' -e 's/vim:tw=78://' \
+	sed -e 's/[ 	]*\*[-a-zA-Z0-9.]*\*//g' -e 's/vim:tw=78:.*//' \
 		uganda.txt | uniq >uganda.nsis.txt
 
 # Awk version of .txt to .html conversion.
@@ -370,6 +384,10 @@ tags.ref tags.html: tags
 # Just run over all .txt files each time one changes.  It's fast anyway.
 perlhtml: tags $(DOCS)
 	./vim2html.pl tags $(DOCS)
+
+# Check URLs in the help with "curl".
+test_urls:
+	vim -S test_urls.vim
 
 clean:
 	-rm doctags *.html tags.ref
@@ -405,6 +423,9 @@ os_beos.txt:
 
 os_dos.txt:
 	touch os_dos.txt
+
+os_haiku.txt:
+	touch os_haiku.txt
 
 os_mac.txt:
 	touch os_mac.txt

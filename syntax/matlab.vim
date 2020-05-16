@@ -1,11 +1,14 @@
 " Vim syntax file
 " Language:	Matlab
-" Maintainer:	Maurizio Tranchero - maurizio(.)tranchero(@)gmail(.)com
+" Maintainer:	Alex Burka <vim@alexburka.com>
 " Credits:	Preben 'Peppe' Guldberg <peppe-vim@wielders.org>
+"		Maurizio Tranchero - maurizio(.)tranchero(@)gmail(.)com
 "		Original author: Mario Eusebio
-" Last Change:	Wed Jan 13 11:12:34 CET 2010
-" 		sinh added to matlab implicit commands
+" Last Change:	June 10 2019
+" 		added highlight rule for double-quoted string literals
 " Change History:
+"               - double-quoted string literals added
+" 		- now highlights cell-mode separator comments
 " 		- 'global' and 'persistent' keyword are now recognized
 
 " quit when a syntax file was already loaded
@@ -38,6 +41,7 @@ syn match matlabLineContinuation	"\.\{3}"
 " String
 " MT_ADDON - added 'skip' in order to deal with 'tic' escaping sequence 
 syn region matlabString			start=+'+ end=+'+	oneline skip=+''+
+syn region matlabStringArray		start=+"+ end=+"+	oneline skip=+""+
 
 " If you don't like tabs
 syn match matlabTab			"\t"
@@ -60,6 +64,7 @@ syn match matlabComment			"%.*$"	contains=matlabTodo,matlabTab
 " MT_ADDON - correctly highlights words after '...' as comments
 syn match matlabComment			"\.\.\..*$"	contains=matlabTodo,matlabTab
 syn region matlabMultilineComment	start=+%{+ end=+%}+ contains=matlabTodo,matlabTab
+syn match matlabCellComment     "^%%.*$"
 
 syn keyword matlabOperator		break zeros default margin round ones rand
 syn keyword matlabOperator		ceil floor size clear zeros eye mean std cov
@@ -84,6 +89,7 @@ hi def link matlabExceptions		Conditional
 hi def link matlabRepeat			Repeat
 hi def link matlabTodo			Todo
 hi def link matlabString			String
+hi def link matlabStringArray			String
 hi def link matlabDelimiter		Identifier
 hi def link matlabTransposeOther		Identifier
 hi def link matlabNumber			Number
@@ -96,6 +102,7 @@ hi def link matlabOO			Statement
 hi def link matlabSemicolon		SpecialChar
 hi def link matlabComment			Comment
 hi def link matlabMultilineComment		Comment
+hi def link matlabCellComment          Todo
 hi def link matlabScope			Type
 
 hi def link matlabArithmeticOperator	matlabOperator

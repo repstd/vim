@@ -64,7 +64,7 @@ Bundle 'bronson/vim-trailing-whitespace'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'fatih/vim-go'
 Plugin 'Blackrush/vim-gocode'
-"-------------
+Plugin 'tomasiser/vim-code-dark'
 " Other Utils
 "-------------
 " Bundle 'humiaozuzu/fcitx-status'
