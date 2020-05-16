@@ -1,13 +1,7 @@
 set nocompatible               " be iMproved
 filetype off                   " required!
-" 此处规定Vundle的路径
-if g:islinux
-    set rtp+=~/.vim/bundle/vundle/
-    call vundle#rc()
-else
-    set rtp+=$VIM/vimfiles/bundle/vundle/
-    call vundle#rc('$VIM/vimfiles/bundle/')
-endif
+set rtp+=$VIM/vimfiles/bundle/vundle/
+call vundle#rc('$VIM/vimfiles/bundle/')
 
 " let Vundle manage Vundle
 " required!

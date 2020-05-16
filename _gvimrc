@@ -14,7 +14,6 @@
 
 " set the X11 font to use
 " set guifont=-misc-fixed-medium-r-normal--14-130-75-75-c-70-iso8859-1
-let g:islinux=0
 source $VIM\bundles.vim
 "set guifont=gohufont-14
 set guifont=Ubuntu\ Mono:h18
@@ -23,7 +22,7 @@ set guifont=Ubuntu\ Mono:h18
 "set guioptions -=m
 
 "hide the toolbar of gvim
-set guioptions -=T
+"set guioptions -=T
 
 set guifont=Ubuntu\ Mono:h12
 
