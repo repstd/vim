@@ -13,7 +13,7 @@ Bundle 'gmarik/vundle'
 "------------------
 Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/neocomplete'
-Bundle 'honza/vim-snippets'
+"Bundle 'honza/vim-snippets'
 Bundle 'ervandew/supertab'
 Plugin 'SirVer/ultisnips'
 Plugin 'vim-airline/vim-airline'
